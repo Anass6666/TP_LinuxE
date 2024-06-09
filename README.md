@@ -18,10 +18,6 @@ Après le redémarrage, nous pouvons vérifier l'adresse IP locale de la carte e
 , et nous utilisons le protocole sécurisé SSH.Le ping fonctionne correctement.
 On vérifie aussi que dans le fichier /etc/ssh/sshd_config, la ligne suivante est présente : PermitEmptyPasswords yes
 
-
-![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4067cd7f-1370-421c-9eb8-64547424a7e8)
-
-
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/16a7df19-f15f-46fa-9a10-ff9a86a21ff3)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/a95ee572-363c-494c-8f54-a5da823e2133)
 
@@ -42,4 +38,4 @@ On vérifie aussi que dans le fichier /etc/ssh/sshd_config, la ligne suivante es
 
 # 1.4.5 Chenillard (Et oui, encore !)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/7aa86f6d-e3b1-4f4f-98c6-b27b84d5379c)
-
+![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4067cd7f-1370-421c-9eb8-64547424a7e8)
