@@ -95,9 +95,12 @@ Le chemin vers ces compilateurs : whereis arm-linux-gnueabihf-gcc
 # 2.3.2 Récupéreation de la configuration actuelle du noyau
 — Quel est le rôle des lignes commençant par export ? Création de variable d’environnement qui peuvent etre utilisé pendant l’exécution du shell
 — Pourquoi le chemin fini par un tiret "-" ? Car la ligne dans le make est suivie d’un gcc donc on a pas besoin de le specifier.
-![commande cross_compile_makeprapare](https://github.com/Anass6666/TP_LinuxE/assets/145018011/529427d6-17ce-40fa-822f-66556a1c55d5)
 ![2 3 2make_scripts_](https://github.com/Anass6666/TP_LinuxE/assets/145018011/8633741b-3a5e-4e3c-b244-7e2b316425dc)
 # 2.3.3 Hello World
+![commande cross_compile_makeprapare](https://github.com/Anass6666/TP_LinuxE/assets/145018011/529427d6-17ce-40fa-822f-66556a1c55d5)
+la compilation s’effectue sans encombre , lorsque l’on charge le module et grâce a la commande dmesg on peut voir afficher le parametre .
+![make](https://github.com/Anass6666/TP_LinuxE/assets/145018011/d5e51bd0-ed33-46df-963b-89f12b29f5fd)
+
 
 
 
