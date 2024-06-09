@@ -100,10 +100,13 @@ Le chemin vers ces compilateurs : whereis arm-linux-gnueabihf-gcc
 ![commande cross_compile_makeprapare](https://github.com/Anass6666/TP_LinuxE/assets/145018011/529427d6-17ce-40fa-822f-66556a1c55d5)
 On crée un fichier CROSS dans Src pour pouvoir tester par la suite nos modules . 
 la compilation s’effectue sans encombre , lorsque l’on charge le module et grâce a la commande dmesg on peut voir afficher le parametre .
+
 ![make](https://github.com/Anass6666/TP_LinuxE/assets/145018011/d5e51bd0-ed33-46df-963b-89f12b29f5fd)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/884f0b35-48ed-49bb-8f36-8e9359aa21f4)
+
 TIMER : 
 Chargement et déchargement du module : 
+
 ![2 3 4ChargementModuleTimer](https://github.com/Anass6666/TP_LinuxE/assets/145018011/09156dbc-e975-4ab1-a50d-94975b5b7425)
 ![2 3 4 DechargementTimer](https://github.com/Anass6666/TP_LinuxE/assets/145018011/b6b14706-14c5-44ae-9f08-3f2b73ddbd48)
 
