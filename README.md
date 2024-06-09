@@ -18,7 +18,7 @@ Après le redémarrage, nous pouvons vérifier l'adresse IP locale de la carte e
 , et nous utilisons le protocole sécurisé SSH.Le ping fonctionne correctement.
 On vérifie aussi que dans le fichier /etc/ssh/sshd_config, la ligne suivante est présente : PermitEmptyPasswords yes
 ![ifconfig](https://github.com/Anass6666/TP_LinuxE/assets/145018011/2ff032ca-2cf2-4c1c-addc-afdfe437781a)
-![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/61679a98-62c1-4798-a222-f01faacf78a8)
+
 
 
 # 1.4 Découverte de la cible
@@ -38,3 +38,4 @@ Par exemple , dans le répertoire "sys/class/leds/..", nous pouvons trouver les 
 # 1.4.5 Chenillard (Et oui, encore !)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/7aa86f6d-e3b1-4f4f-98c6-b27b84d5379c)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4067cd7f-1370-421c-9eb8-64547424a7e8)
+![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/61679a98-62c1-4798-a222-f01faacf78a8)
