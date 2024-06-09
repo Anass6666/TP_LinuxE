@@ -1,10 +1,16 @@
 # TP Linux Embarqué
-
+# 1.2 Démarrage
+J'ai inséré la carte SD programmé, et j'ai également allumé la carte.
+On a un navigateur, et tous les applications linux disponibles.
 # 1.3 Connexion au système
+ # 1.3.1 Liaison série
+ On a utilisé le cable 1 usb mini : uart to usb .Pour se connecter , on utilise le port série , PORT 0:   minicom -D /dev/ttyUSB0 -b 115200
+— login : root
+— password : aucun (vraiment rien, ne tapez que sur entrée)
+Nous avons redémarré le SoC pour observer la séquence de démarrage avec la commande reboot
+on observe que lors du reboot on stop tous les processus, le système demande si l’on veut annuler le reboot , puis il démarre le kernel
+L’image flashé précédemment occupe 1.3 Go et l’espace disponible est de 3Go aprés avoir tapé les deux commandes 
 
-1.3.1 Liaison série: 
-On a utilisé le mini USB . 
-Pour se connecter , on utilise le port série , PORT 0:   minicom -D /dev/ttyUSB0 -b 115200
 
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/55e2b35a-dab8-47e6-862b-2113968a52c8)
 
