@@ -29,7 +29,8 @@ Par exemple , dans le répertoire "sys/class/leds/..", nous pouvons trouver les 
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4a428c67-8c9a-474a-b8c2-5692e1e28912)
 
 # 1.4.3 Hello world !
-
+Une fois la configuration et l'exploration des ressources de la carte terminées,On va créé un premier fichier "Hello World" et le compiler à l'aide de la machine virtuelle.
+On procéde à la compilation du fichier source en utilisant la commande adéquate, généralement "arm-linux-gnueabihf-gcc -o hello.c hello". Pour transférer le fichier exécutable vers la carte VEEK, on utilise le protocole SSH avec la commande SCP (Secure Copy).
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/ff2ccf91-045e-41b8-9884-4260e3a8481f)
 
 
