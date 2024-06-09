@@ -18,8 +18,6 @@ Après le redémarrage, nous pouvons vérifier l'adresse IP locale de la carte e
 , et nous utilisons le protocole sécurisé SSH.Le ping fonctionne correctement.
 On vérifie aussi que dans le fichier /etc/ssh/sshd_config, la ligne suivante est présente : PermitEmptyPasswords yes
 ![ifconfig](https://github.com/Anass6666/TP_LinuxE/assets/145018011/2ff032ca-2cf2-4c1c-addc-afdfe437781a)
-
-![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/16a7df19-f15f-46fa-9a10-ff9a86a21ff3)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/a95ee572-363c-494c-8f54-a5da823e2133)
 
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/cb30681f-75ef-4703-965e-c10eb47378fb)
