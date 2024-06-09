@@ -53,7 +53,6 @@ int main(void) {
 	int i=0;
 	int fd = open("/dev/mem", O_RDWR);
 	p = (uint32_t*)mmap(NULL, 4, PROT_WRITE|PROT_READ, MAP_SHARED,fd, 0xFF203000);
-	
 	while (1)
 	{
 		for (i=1;i<10;i++)
