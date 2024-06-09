@@ -34,6 +34,8 @@ On procéde à la compilation du fichier source en utilisant la commande adéqua
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/ff2ccf91-045e-41b8-9884-4260e3a8481f)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/772843cc-3b8e-4795-849c-b74a3c437f63)
 ![compilation](https://github.com/Anass6666/TP_LinuxE/assets/145018011/c649a7d4-c232-4fae-9ea9-1e60e631cbc3)
+# 1.4.4 Accès au matériel
+á l'aide de la commande echo "1" > /sys/class/leds/fpga_led1/brightness , on teste d’allumer et d’éteindre la LED.
 
 
 # 1.4.5 Chenillard (Et oui, encore !)
