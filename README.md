@@ -31,6 +31,7 @@ Par exemple , dans le répertoire "sys/class/leds/..", nous pouvons trouver les 
 # 1.4.3 Hello world !
 Une fois la configuration et l'exploration des ressources de la carte terminées,On va créé un premier fichier "Hello World" et le compiler à l'aide de la machine virtuelle.
 On procéde à la compilation du fichier source en utilisant la commande adéquate, généralement "arm-linux-gnueabihf-gcc -o hello.c hello". Pour transférer le fichier exécutable vers la carte VEEK, on utilise le protocole SSH avec la commande SCP (Secure Copy).
+
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/ff2ccf91-045e-41b8-9884-4260e3a8481f)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/772843cc-3b8e-4795-849c-b74a3c437f63)
 ![compilation](https://github.com/Anass6666/TP_LinuxE/assets/145018011/c649a7d4-c232-4fae-9ea9-1e60e631cbc3)
@@ -46,6 +47,24 @@ J'ai réussi à me connecter et communiquer avec la carte VEEK cependant.Cependa
 ![rootip](https://github.com/Anass6666/TP_LinuxE/assets/145018011/2e43d737-3d3b-4610-8bf7-5b13e9c6c44d)
 # 2.1 Accès aux registres
 Pour accéder aux registres, une étape importante consiste appelée re-mappage de la mémoire, elle fait correspondre une adresse physique à une adresse virtuelle dans l'espace d'adressage du processus en cours d'exécution, dans un code nous allons interroger l’OS en lui donnant une adresse physique pour qu’il nous renvoie par la suite une adresse virtuelle utilisable qui nous permettra d’allumer une LED à l’adresse 0xFF203000. 
+int main(void) {
+	uint32_t * p;
+	int i=0;
+	int fd = open("/dev/mem", O_RDWR);
+	p = (uint32_t*)mmap(NULL, 4, PROT_WRITE|PROT_READ, MAP_SHARED,fd, 0xFF203000);
+	
+	while (1)
+	{
+		for (i=1;i<10;i++)
+		{
+			*p = (1<<i);
+			usleep(500000);
+			*p = (0<<i);
+		}
+	}
+ar	
+	return 0;
+}
 
 
 
