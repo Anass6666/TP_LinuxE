@@ -9,7 +9,7 @@ On a un navigateur, et tous les applications linux disponibles.
 — password : aucun (vraiment rien, ne tapez que sur entrée)
 Nous avons redémarré le SoC pour observer la séquence de démarrage avec la commande reboot
 on observe que lors du reboot on stop tous les processus, le système demande si l’on veut annuler le reboot , puis il démarre le kernel
-L’image flashé précédemment occupe 1.3 Go et l’espace disponible est de 3Go aprés avoir tapé les deux commandes 
+L’image flashé précédemment occupe 1.3 Go et l’espace disponible est de 3,1Go aprés avoir tapé les deux commandes 
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/55e2b35a-dab8-47e6-862b-2113968a52c8)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/d2421c21-be83-4ed1-9236-90fd29842111)
 # 1.3.3 Configuration réseau
