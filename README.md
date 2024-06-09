@@ -65,6 +65,18 @@ int main(void) {
 	}	
 	return 0;
 }
+# 2.2 Compilation de module noyau sur la VM
+Pour compiler des modules noyau dans la VM, On a besoin des paquets suivant :
+sudo apt install linux-headers-amd64
+sudo apt install bc
+À partir du Makefile et du fichier source hello.c disponibles sur moodle,j'ai compilé notre premier module
+Pour charger : sudo insmod <nom_du_module.ko>
+Pour décharger : sudo rmmod<nom_du_module.ko>
+Pour avoir des informations sur le module: sudo modinfo<nom_du_module.ko>
+sudo lsmod : pour afficher le status des modules dans le noyau linux. cela nous affiche
+une list des modules chargés.
+sudo dmesg: ça affiche les messages dans le journal du noyau
+![compilation_module_noyeau](https://github.com/Anass6666/TP_LinuxE/assets/145018011/329ae68f-7d89-4d81-b7a2-ea770d52837a)
 
 
 
