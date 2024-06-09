@@ -4,28 +4,27 @@ J'ai inséré la carte SD programmé, et j'ai également allumé la carte.
 On a un navigateur, et tous les applications linux disponibles.
 # 1.3 Connexion au système
  # 1.3.1 Liaison série
- On a utilisé le cable 1 usb mini : uart to usb .Pour se connecter , on utilise le port série , PORT 0:   minicom -D /dev/ttyUSB0 -b 115200
+ On a utilisé le cable 1 usb mini : uart to usb .Pour se connecter , on utilise le port série , PORT 0:minicom -D /dev/ttyUSB0 -b 115200
 — login : root
-— password : aucun (vraiment rien, ne tapez que sur entrée)
-Nous avons redémarré le SoC pour observer la séquence de démarrage avec la commande reboot
+— password : aucun
+J'ai redémarré le SoC pour observer la séquence de démarrage avec la commande reboot.
 on observe que lors du reboot on stop tous les processus, le système demande si l’on veut annuler le reboot , puis il démarre le kernel
 L’image flashé précédemment occupe 1.3 Go et l’espace disponible est de 3,1Go aprés avoir tapé les deux commandes 
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/55e2b35a-dab8-47e6-862b-2113968a52c8)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/d2421c21-be83-4ed1-9236-90fd29842111)
 # 1.3.3 Configuration réseau
 lorsqu’on branche la carte avec le switch , l’adresse que l’on se voit attribuée est la suivantes: 192.168.88.56
-Après le redémarrage, nous pouvons vérifier l'adresse IP locale de la carte en utilisant la commande "ifconfig".Pour vérifier le bon fonctionnement nous faisons un ping
-, et nous utilisons le protocole sécurisé SSH.Le ping fonctionne correctement.
+Après le redémarrage, nous pouvons vérifier l'adresse IP locale de la carte en utilisant la commande "ifconfig".Pour vérifier le bon fonctionnement on fait un ping
+, et on utilise le protocole sécurisé SSH.Le ping fonctionne correctement.
 On vérifie aussi que dans le fichier /etc/ssh/sshd_config, la ligne suivante est présente : PermitEmptyPasswords yes
 ![ifconfig](https://github.com/Anass6666/TP_LinuxE/assets/145018011/2ff032ca-2cf2-4c1c-addc-afdfe437781a)
-
-
 
 # 1.4 Découverte de la cible
   # 1.4.1 Exploration des dossiers /sys/class et /proc
 Sous la racines nous avons les dossier suivant: /usr , /proc , /root , /sys etc..En tapant la commande cpuinfo on voit que l’on a un processeur dual core  ARMv7 
 iomem : Ce fichier nous donne des informations sur l’allocation de la mémoire des entrées sorties du systeme, il nous donne les plages de mémoire utilisées pour chaque périphérique.
-Par exemple , dans le répertoire "sys/class/leds/..", nous pouvons trouver les LED disponibles en tant que périphériques.le répertoire /sys/class contient les peripheriques,GPIO, DMA, I2C ect..La difference entre le fichier /proc/device-tree/sopc@0 et le fichier iomem est que le premier nous affiche les timer en plus.
+Par exemple , dans le répertoire "sys/class/leds/..", on trouve les LED disponibles en tant que périphériques.le répertoire /sys/class contient les peripheriques,GPIO, DMA, I2C ect..
+La difference entre le fichier /proc/device-tree/sopc@0 et le fichier iomem est que le premier nous affiche les timer en plus.
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4a428c67-8c9a-474a-b8c2-5692e1e28912)
 
 # 1.4.3 Hello world !
@@ -74,7 +73,7 @@ Pour charger : sudo insmod <nom_du_module.ko>
 Pour décharger : sudo rmmod<nom_du_module.ko>
 Pour avoir des informations sur le module: sudo modinfo<nom_du_module.ko>
 sudo lsmod : pour afficher le status des modules dans le noyau linux. cela nous affiche
-une list des modules chargés.
+une liste des modules chargés.
 sudo dmesg: ça affiche les messages dans le journal du noyau
 ![compilation_module_noyeau](https://github.com/Anass6666/TP_LinuxE/assets/145018011/329ae68f-7d89-4d81-b7a2-ea770d52837a)
 
@@ -83,7 +82,7 @@ On teste le programme suivant : — utilisation de paramètres au chargement du 
 ![Capture du 2024-05-30 15-30-48](https://github.com/Anass6666/TP_LinuxE/assets/145018011/25c89164-e73f-4440-a9c8-909855234142)
 Pour charger le module avec le paramètre on tape: “sudo insmod le_module.ko param=0”.
 Création d’une entrée dans /proc:
-Avec les memes démarches pour la compilation , on ajoute une entrée proc:(Le code source est dans le fichier src/proc
+Avec les memes démarches pour la compilation , on ajoute une entrée proc:(Le code source est dans le fichier src/proc)
 TIMER:
 
 ![Timer](https://github.com/Anass6666/TP_LinuxE/assets/145018011/e9e2e529-1934-4f13-91a1-a1f69d1a3639)
@@ -96,7 +95,7 @@ sudo apt install crossbuild-essential-armhf
 sudo apt install binutils-multiarch
 Le chemin vers ces compilateurs : whereis arm-linux-gnueabihf-gcc
 # 2.3.2 Récupéreation de la configuration actuelle du noyau
-— Quel est le rôle des lignes commençant par export ? Création de variable d’environnement qui peuvent etre utilisé pendant l’exécution du shell
+— Quel est le rôle des lignes commençant par export ? Création de variable d’environnement qui peuvent etre utilisé pendant l’exécution.
 — Pourquoi le chemin fini par un tiret "-" ? Car la ligne dans le make est suivie d’un gcc donc on a pas besoin de le specifier.
 ![2 3 2make_scripts_](https://github.com/Anass6666/TP_LinuxE/assets/145018011/8633741b-3a5e-4e3c-b244-7e2b316425dc)
 # 2.3.3 Hello World
