@@ -47,6 +47,7 @@ J'ai réussi à me connecter et communiquer avec la carte VEEK cependant.Cependa
 ![rootip](https://github.com/Anass6666/TP_LinuxE/assets/145018011/2e43d737-3d3b-4610-8bf7-5b13e9c6c44d)
 # 2.1 Accès aux registres
 Pour accéder aux registres, une étape importante consiste appelée re-mappage de la mémoire, elle fait correspondre une adresse physique à une adresse virtuelle dans l'espace d'adressage du processus en cours d'exécution, dans un code nous allons interroger l’OS en lui donnant une adresse physique pour qu’il nous renvoie par la suite une adresse virtuelle utilisable qui nous permettra d’allumer une LED à l’adresse 0xFF203000. 
+
 int main(void) {
 	uint32_t * p;
 	int i=0;
@@ -61,10 +62,10 @@ int main(void) {
 			usleep(500000);
 			*p = (0<<i);
 		}
-	}
-ar	
+	}	
 	return 0;
 }
+
 
 
 
