@@ -21,8 +21,11 @@ On vérifie aussi que dans le fichier /etc/ssh/sshd_config, la ligne suivante es
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/61679a98-62c1-4798-a222-f01faacf78a8)
 
 
-1.4 Découverte de la cible
-1.4.1 Exploration des dossiers /sys/class et /proc
+# 1.4 Découverte de la cible
+  # 1.4.1 Exploration des dossiers /sys/class et /proc
+Sous la racines nous avons les dossier suivant: /usr , /proc , /root , /sys etc..En tapant la commande cpuinfo on voit que l’on a un processeur dual core  ARMv7 
+iomem : Ce fichier nous donne des informations sur l’allocation de la mémoire des entrées sorties du systeme, il nous donne les plages de mémoire utilisées pour chaque périphérique.
+Par exemple , dans le répertoire "sys/class/leds/..", nous pouvons trouver les LED disponibles en tant que périphériques.le répertoire /sys/class contient les peripheriques,GPIO, DMA, I2C ect..La difference entre le fichier /proc/device-tree/sopc@0 et le fichier iomem est que le premier nous affiche les timer en plus.
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4a428c67-8c9a-474a-b8c2-5692e1e28912)
 
 # 1.4.3 Hello world !
