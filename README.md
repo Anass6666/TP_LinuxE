@@ -112,6 +112,11 @@ Chargement et déchargement du module :
 
 On voit bien le bon fonctionnement de la crossCompilation (Parametre et TIMER ) 
 
+En conclusion, ce TP sur le système Linux embarqué a été très enrichissant. J'ai pu explorer plusieurs aspects, tels que la gestion des périphériques, les adresses mémoire et les modules de processus. J'ai également créé mon propre module, capable de prendre des paramètres et accessible en écriture et en lecture.
+
+De plus, j'ai mieux compris le fonctionnement d'un système Linux embarqué et les différentes étapes nécessaires pour configurer et interagir avec les ressources matérielles. J'ai acquis des connaissances pratiques sur la compilation, le transfert de fichiers et la manipulation des processus.
+
+Dans l'ensemble, ce TP m'a offert une expérience concrète et m'a permis de mettre en pratique les concepts théoriques appris
 
 
 
