@@ -12,10 +12,11 @@ on observe que lors du reboot on stop tous les processus, le système demande si
 L’image flashé précédemment occupe 1.3 Go et l’espace disponible est de 3Go aprés avoir tapé les deux commandes 
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/55e2b35a-dab8-47e6-862b-2113968a52c8)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/d2421c21-be83-4ed1-9236-90fd29842111)
-aprés avoir tapé les deux commandes
-./expand_rootfs.sh
-./resize2fs_once
-nous avons maintenant un espace disponible de 32 Go
+# 1.3.3 Configuration réseau
+lorsqu’on branche la carte avec le switch , l’adresse que l’on se voit attribuée est la suivantes: 192.168.88.19
+Après le redémarrage, nous pouvons vérifier l'adresse IP locale de la carte en utilisant la commande "ifconfig".Pour vérifier le bon fonctionnement nous faisons un ping
+, et nous utilisons le protocole sécurisé SSH.Le ping fonctionne correctement.
+On vérifie aussi que dans le fichier /etc/ssh/sshd_config, la ligne suivante est présente : PermitEmptyPasswords yes
 
 
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4067cd7f-1370-421c-9eb8-64547424a7e8)
