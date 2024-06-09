@@ -17,6 +17,7 @@ lorsqu’on branche la carte avec le switch , l’adresse que l’on se voit att
 Après le redémarrage, nous pouvons vérifier l'adresse IP locale de la carte en utilisant la commande "ifconfig".Pour vérifier le bon fonctionnement on fait un ping
 , et on utilise le protocole sécurisé SSH.Le ping fonctionne correctement.
 On vérifie aussi que dans le fichier /etc/ssh/sshd_config, la ligne suivante est présente : PermitEmptyPasswords yes
+
 ![ifconfig](https://github.com/Anass6666/TP_LinuxE/assets/145018011/2ff032ca-2cf2-4c1c-addc-afdfe437781a)
 
 # 1.4 Découverte de la cible
