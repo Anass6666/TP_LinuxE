@@ -81,6 +81,7 @@ sudo dmesg: ça affiche les messages dans le journal du noyau
 On teste le programme suivant : — utilisation de paramètres au chargement du module,avec la meme  démarche pour la compilation. 
 ![modulehello](https://github.com/Anass6666/TP_LinuxE/assets/145018011/adc039cc-8a20-4c87-b2af-6d89244d722d)
 ![Capture du 2024-05-30 15-30-48](https://github.com/Anass6666/TP_LinuxE/assets/145018011/25c89164-e73f-4440-a9c8-909855234142)
+
 Pour charger le module avec le paramètre on tape: “sudo insmod le_module.ko param=0”.
 Création d’une entrée dans /proc:
 Avec les memes démarches pour la compilation , on ajoute une entrée proc:(Le code source est dans le fichier src/proc)
