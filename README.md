@@ -40,4 +40,13 @@ On procéde à la compilation du fichier source en utilisant la commande adéqua
 # 1.4.5 Chenillard (Et oui, encore !)
 On a écrit le code qui réalise un chenillard et ça marche très bien , On crée  un fichier "main" dans lequel nous ouvrons le fichier brightness, modifie sa valeur, puis on referme le fichier. Cette séquence est répétée pour chaque LED du chenillard
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/7aa86f6d-e3b1-4f4f-98c6-b27b84d5379c)
+# 2 Modules kernel (TP2)
+# 2.0 Reprise du TP1
+J'ai réussi à me connecter et communiquer avec la carte VEEK cependant.Cependant l'adresse IP a changé 
+![rootip](https://github.com/Anass6666/TP_LinuxE/assets/145018011/2e43d737-3d3b-4610-8bf7-5b13e9c6c44d)
+# 2.1 Accès aux registres
+Pour accéder aux registres, une étape importante consiste appelée re-mappage de la mémoire, elle fait correspondre une adresse physique à une adresse virtuelle dans l'espace d'adressage du processus en cours d'exécution, dans un code nous allons interroger l’OS en lui donnant une adresse physique pour qu’il nous renvoie par la suite une adresse virtuelle utilisable qui nous permettra d’allumer une LED à l’adresse 0xFF203000. 
+
+
+
 
