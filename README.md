@@ -38,5 +38,6 @@ On procéde à la compilation du fichier source en utilisant la commande adéqua
 á l'aide de la commande echo "1" > /sys/class/leds/fpga_led1/brightness , on teste d’allumer et d’éteindre la LED.
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4067cd7f-1370-421c-9eb8-64547424a7e8)
 # 1.4.5 Chenillard (Et oui, encore !)
+On a écrit le code qui réalise un chenillard et ça marche très bien , On crée  un fichier "main" dans lequel nous ouvrons le fichier brightness, modifie sa valeur, puis on referme le fichier. Cette séquence est répétée pour chaque LED du chenillard
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/7aa86f6d-e3b1-4f4f-98c6-b27b84d5379c)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/61679a98-62c1-4798-a222-f01faacf78a8)
