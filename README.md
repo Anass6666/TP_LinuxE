@@ -1,4 +1,4 @@
-![IMG_1508](https://github.com/Anass6666/TP_LinuxE/assets/145018011/6863ab07-2662-4508-9827-9241432615ec)# TP Linux Embarqué
+# TP Linux Embarqué
 # 1.2 Démarrage
 J'ai inséré la carte SD programmé, et j'ai également allumé la carte.
 On a un navigateur, et tous les applications linux disponibles.
