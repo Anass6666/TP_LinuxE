@@ -85,6 +85,21 @@ Création d’une entrée dans /proc:
 Avec les memes démarches pour la compilation , on ajoute une entrée proc:(Le code source est dans le fichier src/proc
 TIMER:
 ![Timer](https://github.com/Anass6666/TP_LinuxE/assets/145018011/e9e2e529-1934-4f13-91a1-a1f69d1a3639)
+# 2.3 CrossCompilation de modules noyau
+# 2.3.0 Récupération du Noyau Terasic
+  # 2.3.1 Préparation de la compilation
+sudo apt install bc
+sudo apt install crossbuild-essential-armhf
+sudo apt install binutils-multiarch
+Le chemin vers ces compilateurs : whereis arm-linux-gnueabihf-gcc
+# 2.3.2 Récupéreation de la configuration actuelle du noyau
+— Quel est le rôle des lignes commençant par export ? Création de variable d’environnement qui peuvent etre utilisé pendant l’exécution du shell
+— Pourquoi le chemin fini par un tiret "-" ? Car la ligne dans le make est suivie d’un gcc donc on a pas besoin de le specifier.
+![commande cross_compile_makeprapare](https://github.com/Anass6666/TP_LinuxE/assets/145018011/529427d6-17ce-40fa-822f-66556a1c55d5)
+![2 3 2make_scripts_](https://github.com/Anass6666/TP_LinuxE/assets/145018011/8633741b-3a5e-4e3c-b244-7e2b316425dc)
+# 2.3.3 Hello World
+
+
 
 
 
