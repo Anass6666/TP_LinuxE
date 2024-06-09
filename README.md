@@ -80,8 +80,9 @@ sudo dmesg: ça affiche les messages dans le journal du noyau
 On teste le programme suivant : — utilisation de paramètres au chargement du module,avec la meme  démarche pour la compilation. 
 ![modulehello](https://github.com/Anass6666/TP_LinuxE/assets/145018011/adc039cc-8a20-4c87-b2af-6d89244d722d)
 ![Capture du 2024-05-30 15-30-48](https://github.com/Anass6666/TP_LinuxE/assets/145018011/25c89164-e73f-4440-a9c8-909855234142)
-Pour charger le module avec le paramètre on tape: “sudo insmod le_module.ko param=0”
+Pour charger le module avec le paramètre on tape: “sudo insmod le_module.ko param=0”.
 Création d’une entrée dans /proc:
+
 Ensuite on va  intégrer la fonctionnalité d'une entrée de fichier dans le répertoire /proc/. 
 #include <linux/module.h>
 #include <linux/kernel.h>
@@ -104,6 +105,7 @@ static const struct file_operations proc_fops = {
 static int param;
 module_param(param, int, 0);
 MODULE_PARM_DESC(param, "Un paramètre de ce module");
+
 il faut par la suite écrire le code des fonctions read et write.
  
  
