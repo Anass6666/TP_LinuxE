@@ -80,8 +80,32 @@ sudo dmesg: ça affiche les messages dans le journal du noyau
 On teste le programme suivant : — utilisation de paramètres au chargement du module,avec la meme  démarche pour la compilation. 
 ![modulehello](https://github.com/Anass6666/TP_LinuxE/assets/145018011/adc039cc-8a20-4c87-b2af-6d89244d722d)
 ![Capture du 2024-05-30 15-30-48](https://github.com/Anass6666/TP_LinuxE/assets/145018011/25c89164-e73f-4440-a9c8-909855234142)
+Pour charger le module avec le paramètre on tape: “sudo insmod le_module.ko param=0”
 Création d’une entrée dans /proc:
- Ensuite on va  intégrer la fonctionnalité d'une entrée de fichier dans le répertoire /proc/. 
+Ensuite on va  intégrer la fonctionnalité d'une entrée de fichier dans le répertoire /proc/. 
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/init.h>
+#include <linux/uaccess.h>
+#include <linux/proc_fs.h>
+#define DRIVER_AUTHOR "Christophe Barès"
+#define DRIVER_DESC "Hello world Module"
+#define DRIVER_LICENSE "GPL"
+#define TAILLE 100
+struct proc_dir_entry *proc_file_entry;
+ssize_t fops_write(struct file * file, const char __user * buffer,
+size_t count, loff_t * ppos);
+ssize_t fops_read(struct file *file, char __user * buffer,
+size_t count, loff_t * ppos);
+static const struct file_operations proc_fops = {
+.read = fops_read,
+.write = fops_write,
+};
+static int param;
+module_param(param, int, 0);
+MODULE_PARM_DESC(param, "Un paramètre de ce module");
+il faut par la suite écrire le code des fonctions read et write.
+ 
  
 
 
