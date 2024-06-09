@@ -20,7 +20,7 @@ nous avons maintenant un espace disponible de 32 Go
 
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/4067cd7f-1370-421c-9eb8-64547424a7e8)
 
-![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/42484ff0-a9a7-41f4-8ecc-ea846f7f4bb4)
+
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/16a7df19-f15f-46fa-9a10-ff9a86a21ff3)
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/a95ee572-363c-494c-8f54-a5da823e2133)
 
