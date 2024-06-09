@@ -1,4 +1,4 @@
-# TP Linux Embarqué
+![IMG_1508](https://github.com/Anass6666/TP_LinuxE/assets/145018011/6863ab07-2662-4508-9827-9241432615ec)# TP Linux Embarqué
 # 1.2 Démarrage
 J'ai inséré la carte SD programmé, et j'ai également allumé la carte.
 On a un navigateur, et tous les applications linux disponibles.
@@ -41,7 +41,7 @@ On procéde à la compilation du fichier source en utilisant la commande adéqua
 # 1.4.5 Chenillard (Et oui, encore !)
 On a écrit le code qui réalise un chenillard et ça marche très bien , On crée  un fichier "main" dans lequel nous ouvrons le fichier brightness, modifie sa valeur, puis on referme le fichier. Cette séquence est répétée pour chaque LED du chenillard
 ![image](https://github.com/Anass6666/TP_LinuxE/assets/145018011/7aa86f6d-e3b1-4f4f-98c6-b27b84d5379c)
-![Uploading IMG_1508.jpg…]()
+![IMG_1508](https://github.com/Anass6666/TP_LinuxE/assets/145018011/e068bffa-8749-4b3c-8de3-97702feb3253)
 # 2 Modules kernel (TP2)
 # 2.0 Reprise du TP1
 J'ai réussi à me connecter et communiquer avec la carte VEEK cependant.Cependant l'adresse IP a changé 
