@@ -84,7 +84,9 @@ Pour charger le module avec le paramètre on tape: “sudo insmod le_module.ko p
 Création d’une entrée dans /proc:
 Avec les memes démarches pour la compilation , on ajoute une entrée proc:(Le code source est dans le fichier src/proc
 TIMER:
+
 ![Timer](https://github.com/Anass6666/TP_LinuxE/assets/145018011/e9e2e529-1934-4f13-91a1-a1f69d1a3639)
+
 # 2.3 CrossCompilation de modules noyau
 # 2.3.0 Récupération du Noyau Terasic
   # 2.3.1 Préparation de la compilation
@@ -98,6 +100,7 @@ Le chemin vers ces compilateurs : whereis arm-linux-gnueabihf-gcc
 ![2 3 2make_scripts_](https://github.com/Anass6666/TP_LinuxE/assets/145018011/8633741b-3a5e-4e3c-b244-7e2b316425dc)
 # 2.3.3 Hello World
 ![commande cross_compile_makeprapare](https://github.com/Anass6666/TP_LinuxE/assets/145018011/529427d6-17ce-40fa-822f-66556a1c55d5)
+
 On crée un fichier CROSS dans Src pour pouvoir tester par la suite nos modules . 
 la compilation s’effectue sans encombre , lorsque l’on charge le module et grâce a la commande dmesg on peut voir afficher le parametre .
 
